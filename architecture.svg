@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+<defs>
+  <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#444"/>
+  </marker>
+  <marker id="arr-dash" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#999"/>
+  </marker>
+</defs>
+<style>
+  * { font-family: Arial, sans-serif; }
+  .title    { font-size: 18px; font-weight: bold; fill: #111; }
+  .zone-lbl { font-size: 11px; font-weight: bold; fill: #555; letter-spacing: 1px; }
+  .box-name { font-size: 13px; font-weight: bold; fill: #111; }
+  .box-desc { font-size: 10px; fill: #555; }
+  .lbl      { font-size: 10px; fill: #333; font-style: italic; }
+  .lbl-w    { font-size: 10px; fill: #fff; font-style: italic; }
+</style>
+
+<text class="title" x="600" y="34" text-anchor="middle">Architecture — Wanderlog</text>
+
+<rect x="20" y="50" width="140" height="660" rx="8" fill="#f0f0f0" stroke="#bbb" stroke-width="1.5"/>
+<text class="zone-lbl" x="90" y="70" text-anchor="middle">DONNÉES</text>
+
+<ellipse cx="90" cy="195" rx="52" ry="15" fill="white" stroke="#555" stroke-width="1.5"/>
+<rect x="38" y="195" width="104" height="110" fill="white" stroke="#555" stroke-width="1.5"/>
+<ellipse cx="90" cy="305" rx="52" ry="15" fill="white" stroke="#555" stroke-width="1.5"/>
+<text class="box-name" x="90" y="240" text-anchor="middle">Fichiers</text>
+<text class="box-desc" x="90" y="257" text-anchor="middle">users.csv</text>
+<text class="box-desc" x="90" y="272" text-anchor="middle">trips.json</text>
+<text class="box-desc" x="90" y="287" text-anchor="middle">likes.json</text>
+<text class="box-desc" x="90" y="302" text-anchor="middle">comments.json</text>
+
+<rect x="175" y="50" width="155" height="660" rx="8" fill="#e8f4fd" stroke="#90caf9" stroke-width="1.5"/>
+<text class="zone-lbl" x="252" y="70" text-anchor="middle">ACCÈS DONNÉES</text>
+
+<rect x="193" y="220" width="120" height="60" rx="5" fill="white" stroke="#1565c0" stroke-width="1.5"/>
+<text class="box-name" x="253" y="246" text-anchor="middle">data.php</text>
+<text class="box-desc" x="253" y="261" text-anchor="middle">Lecture / Écriture</text>
+<text class="box-desc" x="253" y="274" text-anchor="middle">CSV + JSON</text>
+
+<line x1="142" y1="250" x2="193" y2="250" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<line x1="193" y1="265" x2="142" y2="265" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+
+<rect x="345" y="50" width="185" height="660" rx="8" fill="#fffde7" stroke="#f9a825" stroke-width="1.5"/>
+<text class="zone-lbl" x="437" y="70" text-anchor="middle">PAGES PHP</text>
+
+<rect x="363" y="90" width="148" height="55" rx="5" fill="white" stroke="#444" stroke-width="1.5"/>
+<text class="box-name" x="437" y="113" text-anchor="middle">login.php</text>
+<text class="box-desc" x="437" y="130" text-anchor="middle">Connexion + session</text>
+
+<rect x="363" y="175" width="148" height="55" rx="5" fill="white" stroke="#444" stroke-width="1.5"/>
+<text class="box-name" x="437" y="198" text-anchor="middle">register.php</text>
+<text class="box-desc" x="437" y="215" text-anchor="middle">Inscription utilisateur</text>
+
+<line x1="437" y1="175" x2="437" y2="145" stroke="#444" stroke-width="1.2" marker-end="url(#arr)"/>
+<text class="lbl" x="440" y="164">redirige</text>
+
+<rect x="363" y="295" width="148" height="55" rx="5" fill="white" stroke="#444" stroke-width="1.5"/>
+<text class="box-name" x="437" y="318" text-anchor="middle">add_trip.php</text>
+<text class="box-desc" x="437" y="335" text-anchor="middle">Formulaire + photos</text>
+
+<rect x="363" y="390" width="148" height="55" rx="5" fill="white" stroke="#444" stroke-width="1.5"/>
+<text class="box-name" x="437" y="413" text-anchor="middle">trip.php</text>
+<text class="box-desc" x="437" y="430" text-anchor="middle">Détail voyage</text>
+
+<rect x="363" y="490" width="148" height="55" rx="5" fill="white" stroke="#444" stroke-width="1.5"/>
+<text class="box-name" x="437" y="513" text-anchor="middle">profile.php</text>
+<text class="box-desc" x="437" y="530" text-anchor="middle">Voyages du membre</text>
+
+<rect x="363" y="590" width="148" height="55" rx="5" fill="white" stroke="#444" stroke-width="1.5"/>
+<text class="box-name" x="437" y="613" text-anchor="middle">logout.php</text>
+<text class="box-desc" x="437" y="630" text-anchor="middle">Détruit la session</text>
+
+<line x1="363" y1="617" x2="340" y2="617" stroke="#444" stroke-width="1.2"/>
+<line x1="340" y1="617" x2="340" y2="117" stroke="#444" stroke-width="1.2"/>
+<line x1="340" y1="117" x2="363" y2="117" stroke="#444" stroke-width="1.2" marker-end="url(#arr)"/>
+<text class="lbl" x="262" y="372">redirige vers login</text>
+
+<line x1="511" y1="322" x2="530" y2="322" stroke="#444" stroke-width="1.2"/>
+<line x1="530" y1="322" x2="530" y2="117" stroke="#444" stroke-width="1.2"/>
+<line x1="530" y1="117" x2="563" y2="117" stroke="#444" stroke-width="1.2" marker-end="url(#arr)"/>
+<text class="lbl" x="533" y="230">après ajout</text>
+
+<line x1="363" y1="117" x2="313" y2="235" stroke="#999" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)"/>
+<line x1="363" y1="202" x2="313" y2="245" stroke="#999" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)"/>
+<line x1="363" y1="322" x2="313" y2="255" stroke="#999" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)"/>
+<line x1="363" y1="415" x2="313" y2="260" stroke="#999" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)"/>
+<line x1="363" y1="512" x2="313" y2="265" stroke="#999" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)"/>
+<text class="lbl" x="296" y="168">users.csv</text>
+<text class="lbl" x="296" y="310">trips/likes</text>
+<text class="lbl" x="296" y="320">/comments</text>
+
+<rect x="545" y="50" width="185" height="660" rx="8" fill="#e8f5e9" stroke="#66bb6a" stroke-width="1.5"/>
+<text class="zone-lbl" x="637" y="70" text-anchor="middle">INDEX + AJAX</text>
+
+<rect x="563" y="90" width="148" height="55" rx="5" fill="white" stroke="#2e7d32" stroke-width="1.5"/>
+<text class="box-name" x="637" y="113" text-anchor="middle">index.php</text>
+<text class="box-desc" x="637" y="130" text-anchor="middle">Carte + voyages</text>
+
+<line x1="511" y1="117" x2="563" y2="117" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<text class="lbl" x="514" y="110">login OK</text>
+
+<rect x="563" y="200" width="148" height="55" rx="5" fill="white" stroke="#2e7d32" stroke-width="1.5"/>
+<text class="box-name" x="637" y="223" text-anchor="middle">events.php</text>
+<text class="box-desc" x="637" y="240" text-anchor="middle">Polling temps réel</text>
+
+<rect x="563" y="390" width="148" height="55" rx="5" fill="white" stroke="#2e7d32" stroke-width="1.5"/>
+<text class="box-name" x="637" y="413" text-anchor="middle">like.php</text>
+<text class="box-desc" x="637" y="430" text-anchor="middle">AJAX — toggle like</text>
+
+<line x1="511" y1="417" x2="563" y2="417" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<text class="lbl" x="513" y="410">fetch POST</text>
+
+<rect x="563" y="490" width="148" height="55" rx="5" fill="white" stroke="#2e7d32" stroke-width="1.5"/>
+<text class="box-name" x="637" y="513" text-anchor="middle">comment.php</text>
+<text class="box-desc" x="637" y="530" text-anchor="middle">AJAX — commentaire</text>
+
+<line x1="511" y1="445" x2="540" y2="517" stroke="#444" stroke-width="1.5"/>
+<line x1="540" y1="517" x2="563" y2="517" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<text class="lbl" x="513" y="485">fetch POST</text>
+
+<line x1="563" y1="117" x2="313" y2="230" stroke="#999" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)"/>
+<line x1="563" y1="227" x2="313" y2="255" stroke="#999" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)"/>
+<line x1="563" y1="417" x2="313" y2="265" stroke="#999" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)"/>
+<line x1="563" y1="517" x2="313" y2="270" stroke="#999" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr-dash)"/>
+
+<rect x="745" y="50" width="180" height="450" rx="8" fill="#f3e5f5" stroke="#ab47bc" stroke-width="1.5"/>
+<text class="zone-lbl" x="835" y="70" text-anchor="middle">JAVASCRIPT</text>
+
+<rect x="763" y="90" width="144" height="55" rx="5" fill="white" stroke="#6a1b9a" stroke-width="1.5"/>
+<text class="box-name" x="835" y="113" text-anchor="middle">map.js</text>
+<text class="box-desc" x="835" y="130" text-anchor="middle">Carte Leaflet + polling 3s</text>
+
+<line x1="711" y1="117" x2="763" y2="117" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<text class="lbl" x="713" y="110">charge</text>
+
+<line x1="763" y1="130" x2="711" y2="225" stroke="#444" stroke-width="1.2" stroke-dasharray="4,2" marker-end="url(#arr)"/>
+<text class="lbl" x="710" y="185">polling 3s</text>
+
+<rect x="763" y="200" width="144" height="55" rx="5" fill="white" stroke="#6a1b9a" stroke-width="1.5"/>
+<text class="box-name" x="835" y="223" text-anchor="middle">add_trip.js</text>
+<text class="box-desc" x="835" y="240" text-anchor="middle">Sélection lieu (carte)</text>
+
+<line x1="511" y1="322" x2="763" y2="227" stroke="#444" stroke-width="1.2" stroke-dasharray="4,2" marker-end="url(#arr)"/>
+<text class="lbl" x="580" y="295">charge</text>
+
+<rect x="763" y="310" width="144" height="55" rx="5" fill="white" stroke="#6a1b9a" stroke-width="1.5"/>
+<text class="box-name" x="835" y="333" text-anchor="middle">trip.js</text>
+<text class="box-desc" x="835" y="350" text-anchor="middle">Likes + comms + polling</text>
+
+<line x1="511" y1="417" x2="763" y2="360" stroke="#444" stroke-width="1.2" stroke-dasharray="4,2" marker-end="url(#arr)"/>
+
+<line x1="763" y1="337" x2="711" y2="252" stroke="#444" stroke-width="1.2" stroke-dasharray="4,2" marker-end="url(#arr)"/>
+
+<rect x="763" y="420" width="144" height="55" rx="5" fill="white" stroke="#6a1b9a" stroke-width="1.5"/>
+<text class="box-name" x="835" y="443" text-anchor="middle">validation.js</text>
+<text class="box-desc" x="835" y="460" text-anchor="middle">Formulaires HTML5 FR</text>
+
+<rect x="745" y="520" width="180" height="190" rx="8" fill="#eceff1" stroke="#90a4ae" stroke-width="1.5"/>
+<text class="zone-lbl" x="835" y="540" text-anchor="middle">TRANSVERSAUX</text>
+
+<rect x="763" y="555" width="144" height="45" rx="5" fill="white" stroke="#546e7a" stroke-width="1.5"/>
+<text class="box-name" x="835" y="575" text-anchor="middle">style.css</text>
+<text class="box-desc" x="835" y="591" text-anchor="middle">Styles — toutes les pages</text>
+
+<rect x="763" y="620" width="144" height="55" rx="5" fill="white" stroke="#546e7a" stroke-width="1.5"/>
+<text class="box-name" x="835" y="643" text-anchor="middle">header.php</text>
+<text class="box-desc" x="835" y="659" text-anchor="middle">navbar + session</text>
+<text class="box-name" x="835" y="674" text-anchor="middle">footer.php</text>
+
+<rect x="20" y="720" width="430" height="48" rx="5" fill="white" stroke="#bbb" stroke-width="1"/>
+<text style="font-size:11px;font-weight:bold;fill:#333" x="34" y="740">Légende :</text>
+<line x1="105" y1="736" x2="155" y2="736" stroke="#444" stroke-width="1.5" marker-end="url(#arr)"/>
+<text class="box-desc" x="160" y="740">Navigation / appel PHP</text>
+<line x1="105" y1="756" x2="155" y2="756" stroke="#999" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr-dash)"/>
+<text class="box-desc" x="160" y="760">Accès données / AJAX / chargement JS</text>
+
+</svg>
